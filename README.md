@@ -1,4 +1,5 @@
 Memory Game – Course Project
+
 1. Project Overview
 
 This project implements a mobile-friendly memory matching game using Flutter and the Flame game engine. The objective of the game is to test the player’s ability to remember the positions of cards and match all pairs within the shortest possible time. The game is structured into multiple screens and provides persistent level progression.
@@ -24,9 +25,9 @@ Navigation between these screens follows an intuitive and consistent design.
 
 The user interface adjusts according to screen size using Flutter layout widgets and breakpoints.
 
-The game engine uses Flame’s CameraComponent.withFixedResolution to ensure consistent in-game component sizing regardless of device resolution.
+The game engine uses Flame’s CameraComponent.withFixedResolution to ensure consistent in-game component sizing across devices.
 
-A maximum content width is applied on large desktop screens to maintain readability.
+A maximum content width is applied on wide desktop screens to maintain readability.
 
 2.3 Levels and Progression
 
@@ -34,7 +35,7 @@ The game includes three levels, each differing in grid size and difficulty.
 
 Completion status is persisted between sessions using SharedPreferences.
 
-A completed level is marked as “unlocked,” allowing the player to continue from the next stage after restarting the app.
+A completed level is marked as “unlocked,” allowing the player to continue from the next stage after restarting the application.
 
 2.4 Game Interaction
 
@@ -42,29 +43,29 @@ The game is fully playable through tapping; no keyboard or mouse is required.
 
 Cards flip upon tapping, and matched pairs remain visible.
 
-The game measures the time required to complete each level.
+The game records the time required to complete each level.
 
 2.5 Technology Stack
 
-Flutter as the UI framework.
+Flutter – UI framework
 
-Flame as the game engine.
+Flame – Game engine
 
-SharedPreferences for local data persistence.
+SharedPreferences – Local data persistence
 
 3. Running the Application
 3.1 Requirements
 
 Flutter SDK 3.0 or later
 
-A device or emulator capable of running Flutter apps
+A device or emulator capable of running Flutter applications
 
 3.2 Running the Game Locally
 
 Clone the repository:
 
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/kducieos/agnostic-2.git
+cd agnostic-2
 
 
 Fetch dependencies:
@@ -100,9 +101,9 @@ Assets (images) are excluded from the version submitted to the course grader, as
 
 5. Deployment Status
 
-The project is designed to support Web deployment using Flutter’s build web target.
+The project is designed to support Web deployment using Flutter’s web build target.
 For the purposes of this submission, only the local version is required and provided.
-The source code in this repository fully compiles and runs as a Flutter project without additional configuration.
+The source code in this repository fully compiles and runs as a Flutter project without further configuration.
 
 6. Usage
 
@@ -112,9 +113,9 @@ Tap cards to flip them and attempt to match pairs.
 
 Complete all pairs to finish the level.
 
-The completion time will be recorded and shown on the result screen.
+The completion time is recorded and displayed on the result screen.
 
-Completed levels unlock the next stage.
+Successfully completing a level unlocks the next stage.
 
 7. License
 
